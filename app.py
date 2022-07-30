@@ -66,6 +66,6 @@ if btn:
 #     st.text(pred)
     ans=model.predict(np.array([pred]).reshape(1,-1))
     if ans < 5000:
-        st.write("Insufficient Data")
+        st.write("Insufficient Data to predict(too little observations)")
     else:
         st.write("The predicted rent is Rs.",str(int(ans)))
