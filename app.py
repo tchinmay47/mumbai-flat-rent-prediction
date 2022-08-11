@@ -67,7 +67,7 @@ if btn:
     for i in range(len(dictforlabel)):
         if locality in dictforlabel[i]:
             ll=i
-            st.write(str(i))
+#             st.write(str(i))
     if ll==0:
         ans=model_0.predict(np.array([other]).reshape(1,-1))                
     elif ll==1:
