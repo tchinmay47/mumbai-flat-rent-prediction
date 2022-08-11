@@ -68,26 +68,26 @@ if btn:
         if locality in dictforlabel[i]:
             ll=i
             st.write(str(i))
-    if ll==0:
-        ans=model_0.predict(other)
-    elif ll==1:
-        ans=model_1.predict(other)
-    elif ll==2:
-        ans=model_2.predict(other)        
-    elif ll==3:
-        ans=model_3.predict(other)        
-    elif ll==4:
-        ans=model_4.predict(other)        
-    elif ll==5:
-        ans=model_5.predict(other)        
-    elif ll==6:
-        ans=model_6.predict(other)        
-    elif ll==7:
-        ans=model_7.predict(other)        
-    elif ll==8:
-        ans=model_8.predict(other)
-    elif ll==9:
-        ans=model_9.predict(other)
+    if i==0:
+        ans=model_0.predict(np.array([other]).reshape(1,-1))
+    elif i==1:
+        ans=model_1.predict(np.array([other]).reshape(1,-1))
+    elif i==2:
+        ans=model_2.predict(np.array([other]).reshape(1,-1))        
+    elif i==3:
+        ans=model_3.predict(np.array([other]).reshape(1,-1))        
+    elif i==4:
+        ans=model_4.predict(np.array([other]).reshape(1,-1))        
+    elif i==5:
+        ans=model_5.predict(np.array([other]).reshape(1,-1))        
+    elif i==6:
+        ans=model_6.predict(np.array([other]).reshape(1,-1))        
+    elif i==7:
+        ans=model_7.predict(np.array([other]).reshape(1,-1))        
+    elif i==8:
+        ans=model_8.predict(np.array([other]).reshape(1,-1))
+    elif i==9:
+        ans=model_9.predict(np.array([other]).reshape(1,-1))
     else:
         st.write("Somethings wrong")
     if ans < 5000:
