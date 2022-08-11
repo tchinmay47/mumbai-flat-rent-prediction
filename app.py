@@ -14,7 +14,7 @@ model_8=pickle.load(open('model_8.pkl','rb'))
 model_9=pickle.load(open('model_9.pkl','rb'))
 
 st.title("Mumbai Flat Rent Prediction Model")
-area=st.slider("Area", min_value=0, max_value=1000, value=None, step=1)
+area=st.slider("Area", min_value=100, max_value=4000, value=None, step=1)
 bathroom_num=st.slider("Number of Bathrooms", min_value=0, max_value=10, value=None, step=1)
 bedroom_num=st.slider("Number of Bedrooms", min_value=0, max_value=10, value=None, step=1)
 
@@ -67,7 +67,7 @@ if btn:
     for i in range(len(dictforlabel)):
         if locality in dictforlabel[i]:
             ll=i
-            st.write(str(i))
+#             st.write(str(i))
     if i==0:
         ans=model_0.predict(np.array([other]).reshape(1,-1))
     elif i==1:
