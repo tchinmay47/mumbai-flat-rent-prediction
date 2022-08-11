@@ -67,29 +67,30 @@ if btn:
     for i in range(len(dictforlabel)):
         if locality in dictforlabel[i]:
             ll=i
-    if i==0:
-        ans=model_0.predict(other)
-    elif i==1:
-        ans=model_1.predict(other)
-    elif i==2:
-        ans=model_2.predict(other)        
-    elif i==3:
-        ans=model_3.predict(other)        
-    elif i==4:
-        ans=model_4.predict(other)        
-    elif i==5:
-        ans=model_5.predict(other)        
-    elif i==6:
-        ans=model_6.predict(other)        
-    elif i==7:
-        ans=model_7.predict(other)        
-    elif i==8:
-        ans=model_8.predict(other)
-    elif i==9:
-        ans=model_9.predict(other)
-    else:
-        st.write("Somethings wrong")
-    if ans < 5000:
-        st.write("Insufficient Data to predict(too little observations)")
-    else:
-        st.write("The predicted rent is Rs.",str(int(ans)))
+            print(i)
+#     if i==0:
+#         ans=model_0.predict(other)
+#     elif i==1:
+#         ans=model_1.predict(other)
+#     elif i==2:
+#         ans=model_2.predict(other)        
+#     elif i==3:
+#         ans=model_3.predict(other)        
+#     elif i==4:
+#         ans=model_4.predict(other)        
+#     elif i==5:
+#         ans=model_5.predict(other)        
+#     elif i==6:
+#         ans=model_6.predict(other)        
+#     elif i==7:
+#         ans=model_7.predict(other)        
+#     elif i==8:
+#         ans=model_8.predict(other)
+#     elif i==9:
+#         ans=model_9.predict(other)
+#     else:
+#         st.write("Somethings wrong")
+#     if ans < 5000:
+#         st.write("Insufficient Data to predict(too little observations)")
+#     else:
+#         st.write("The predicted rent is Rs.",str(int(ans)))
