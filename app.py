@@ -14,7 +14,7 @@ model_8=pickle.load(open('model_8.pkl','rb'))
 model_9=pickle.load(open('model_9.pkl','rb'))
 
 st.title("Mumbai Flat Rent Prediction Model")
-area=st.slider("Area", min_value=100, max_value=4000, value=None, step=1)
+area=st.slider("Area in Sq.ft", min_value=100, max_value=4000, value=None, step=1)
 bathroom_num=st.slider("Number of Bathrooms", min_value=0, max_value=10, value=None, step=1)
 bedroom_num=st.slider("Number of Bedrooms", min_value=0, max_value=10, value=None, step=1)
 
